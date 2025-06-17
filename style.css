@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('font.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+     }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 15px;
+    text-align: center;
+    margin: 0 40px; /* Ajout d'espace entre les éléments de navigation */
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #113c6ee3; /* Couleur verte pour la nature */
+    color: #492ead88; /* Couleur jaune pour le soleil */
+    transform: scale(1.1);
+}
+
+.auth-buttons {
+    display: flex;
+    margin-left:0px;
+}
+
+.auth-buttons .btn {
+    color: white;
+    background-color: #113c6ea9; /* Couleur jaune pour le bouton */
+    padding: 10px 20px;
+    margin: 0 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #113c6ee3;
+    transform: scale(1.1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(52, 152, 219, 0.8); /* Couleur bleue pour le ciel avec transparence */
+    padding: 20px;
+    z-index: 0;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .navbar-center {
+        display: none;
+    }
+
+    .auth-buttons {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+}
+
+.presentation {
+    padding: 30px;
+    padding-bottom: 40px;
+    z-index: 0;
+    position: relative;
+}
+.presentation h1{
+    color: white;
+    font-size: 50px;
+    
+}
+.presentation p{
+    color: white;
+    font-size: 20px;
+     }
+     .btn-ensavoirplus {
+        background-color: #dae6dade; /* Couleur de fond verte */
+        border: none; /* Pas de bordure */
+        color: white; /* Texte en blanc */
+        padding: 15px 32px; /* Espacement interne */
+        text-align: center; /* Alignement du texte */
+        text-decoration: none; /* Pas de soulignement */
+        display: inline-block; /* Affichage en ligne */
+        font-size: 16px; /* Taille de la police */
+        margin: 4px 2px; /* Marges */
+        cursor: pointer; /* Curseur de type pointeur */
+        border-radius: 20px; /* Coins arrondis */
+    }
+    .titre {
+        color: #ffffff; /* Couleur verte pour le texte */
+        text-align: center; /* Centre le texte */
+        font-size: 40px; /* Taille de la police */
+        margin-top: 50px; /* Espacement supérieur */
+    } 
+    .card-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    
+    .card {
+        background-color: rgba(255, 255, 255, 0.199);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 20%;
+        text-align: center;
+        position: relative;
+    }
+    
+    .card h2 {
+        color: #113c6ee3;
+    }
+    
+    .card p {
+        font-size: 16px;
+        color: #555;
+    }
+    
+    .btn-ensavoirplus {
+        background-color: #113c6ee3;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .btn-ensavoirplus:hover {
+        background-color:#113c6ee3;
+    }
+    
+    .badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: red;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+.container1 h1 {
+    text-align: center;
+    color: white;
+}
+.container1 p {
+    text-align: center;
+    color: white;
+}
+footer {
+    background-color: #ffffff;
+    opacity: 0.5;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+}
